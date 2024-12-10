@@ -1,7 +1,6 @@
-import containerQueries from '@tailwindcss/container-queries';
-import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
+import daisyui from 'daisyui';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -10,5 +9,10 @@ export default {
 		extend: {}
 	},
 
-	plugins: [typography, forms, containerQueries]
+	plugins: [typography, daisyui],
+
+	daisyui: {
+		themes: ['nord', 'sunset'], // Los temas que deseas usar
+		darkTheme: 'sunset' // Tema oscuro por defecto
+	}
 } satisfies Config;
