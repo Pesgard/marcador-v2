@@ -1,10 +1,10 @@
 <script>
-	import { Trophy, Volleyball } from 'lucide-svelte';
+	import { Trophy, Volleyball, FolderKanban } from 'lucide-svelte';
 </script>
 
 <aside class="prose">
 	<section>
-		<h2>Menu</h2>
+		<h2 class="text-center	">Menu</h2>
 		<ul>
 			<li>
 				<a href="dashboard" class="transition-colors hover:text-blue-500">
@@ -14,6 +14,10 @@
 				<a href="dashboard" class="transition-colors hover:text-blue-500">
 					<Trophy />
 					Torneos
+				</a>
+				<a href="../dashboard/equipos" class="transition-colors hover:text-blue-500">
+					<FolderKanban/>
+					Equipos
 				</a>
 			</li>
 		</ul>
